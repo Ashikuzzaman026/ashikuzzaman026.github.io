@@ -18,7 +18,7 @@ title: "Ashikuzzaman"
  <a href="cv.html">CV</a>
 <a href="research.html">Research</a>
  <a href="experience.html">Experience</a>
- <li></li><a href="projects.html">Projects</a> 
+<a href="projects.html">Projects</a> 
  <a href="contact.html">Contact</a> 
 
 </nav>
