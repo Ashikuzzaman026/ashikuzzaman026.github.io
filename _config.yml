@@ -1,0 +1,12 @@
+title: "Ashikuzzaman - Academic Portfolio"
+author: Ashikuzzaman
+email: your-email@example.com
+description: >-
+  Aspiring researcher and developer passionate about technology, innovation, and making an impact.
+baseurl: ""
+url: "https://ashikuzzaman026.github.io"
+theme: minima
+minima:
+  skin: auto
+  include_css:
+    - /assets/css/animated-bg.css
