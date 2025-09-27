@@ -4,7 +4,7 @@ title: "Ashikuzzaman"
 ---
 
 <div style="text-align: center;">
-  <img src="profile.jpg" alt="Ashikuzzaman Photo" height="300" weight="300" class="profile">
+  <img src="profile.jpg" alt="Ashikuzzaman Photo" height="150" weight="150" class="profile">
   <h1>Ashikuzzaman</h1>
   <div class="social-icons">
     <a href="mailto:your.email@example.com"><img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="Email"></a>
