@@ -96,15 +96,6 @@ nav {
   letter-spacing: 2px;
 }
 
-/* Align profile image and name in center */
-.profile {
-  text-align: center;
-}
-
-.nav-list {
-  justify-content: center;
-}
-
 /* Media query adjustments */
 @media (max-width: 600px) {
   .section {
@@ -113,4 +104,19 @@ nav {
   .nav-list {
     gap: 0.5rem;
   }
+}
+
+/* Re-arrange nav-list in the correct order */
+.nav-list {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-list li {
+  order: 1;
+}
+
+.nav-list li:first-child {
+  order: 0;
 }
