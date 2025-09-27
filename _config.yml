@@ -9,4 +9,5 @@ theme: minima
 minima:
   skin: auto
   include_css:
-    - /assets/css/animated-bg.css
+    - /assets/css/sidebar.css
+    - /assets/css/custom-cards.css
