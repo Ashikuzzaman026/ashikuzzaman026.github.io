@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/animated-bg.css' | relative_url }}">
+  {% if site.minima.include_css %}
+    {% for css in site.minima.include_css %}
+      <link rel="stylesheet" href="{{ css | relative_url }}">
+    {% endfor %}
+  {% endif %}
+</head>
+<body>
+  {% include top-navbar.html %}
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
