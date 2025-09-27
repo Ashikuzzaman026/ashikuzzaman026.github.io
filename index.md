@@ -1,1 +1,33 @@
+---
+layout: default
+title: "Ashikuzzaman"
+---
 
+<div style="text-align: center;">
+  <img src="profile.jpg" alt="Ashikuzzaman Photo" class="profile">
+  <h1>Ashikuzzaman</h1>
+  <div class="social-icons">
+    <a href="mailto:your.email@example.com"><img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="Email"></a>
+    <a href="https://github.com/Ashikuzzaman026"><img src="https://img.icons8.com/ios-glyphs/48/3578e5/github.png" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.icons8.com/color/48/3578e5/linkedin.png" alt="LinkedIn"></a>
+  </div>
+</div>
+
+<nav>
+  <a href="about.html">About Me</a>
+  <a href="cv.html">CV</a>
+  <a href="research.html">Research</a>
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="section">
+  <div class="section-title">About Me</div>
+  <p>
+    I am a <b>[Your Current Position, e.g., undergraduate student]</b> at <b>[Your University]</b>.
+    <br>
+    My interests include <b>[your research/academic interests]</b>.<br>
+    I am passionate about <b>[short personal mission or value]</b>.
+  </p>
+</div>
