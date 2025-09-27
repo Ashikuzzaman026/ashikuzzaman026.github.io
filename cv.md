@@ -14,11 +14,4 @@ title: "CV"
     <li><b>Download full CV:</b> [Link to PDF if available]</li>
   </ul>
 </div>
-<nav>
- <a href="index.html">Home</a>
- <a href="cv.html" class="active">CV</a>
-  <a href="research.html">Research</a>
-  <a href="experience.html">Experience</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html">Contact</a>
-</nav>
+
