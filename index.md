@@ -11,17 +11,7 @@ title: "Ashikuzzaman"
     <a href="https://github.com/Ashikuzzaman026"><img src="https://img.icons8.com/ios-glyphs/48/3578e5/github.png" alt="GitHub"></a>
     <a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.icons8.com/color/48/3578e5/linkedin.png" alt="LinkedIn"></a>
   </div>
-</div>
 
-<nav aria-label="Main Navigation" >
-  
-   <a href="#cv" class="active">CV</a>
-  <a href="#research">Research</a>
-   <a href="#experience">Experience</a>
-   <a href="#projects">Projects</a>
-   <a href="#contact">Contact</a>
-
-</nav>
 
 <div class="section">
   
