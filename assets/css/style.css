@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 img.profile {
   border-radius: 50%;
   box-shadow: 0 4px 20px #8883;
@@ -12,47 +13,71 @@ img.profile {
   margin-top: 24px;
   margin-bottom: 12px;
 }
+
 h1, h2, h3 {
   color: #2b4a6f;
 }
+
 nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   margin: 24px 0 32px 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   flex-wrap: wrap;
 }
-nav a {
-   text-decoration: none;
+
+.nav-list li {
+  display: flex;
+}
+
+.nav-list a {
+  text-decoration: none;
   color: #3578e5;
   padding: 6px 16px;
   border-radius: 20px;
   background: #eef4fc;
   box-shadow: 0 2px 8px #3578e511;
   font-weight: 600;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  display: inline-block;
 }
-nav a:hover, nav a.active {
+.nav-list a:hover,
+.nav-list a.active,
+.nav-list a:focus {
   background: #3578e5;
   color: #fff;
+  box-shadow: 0 2px 12px #3578e533;
 }
+
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 20px;
 }
+
 .social-icons a img {
   width: 38px;
   height: 38px;
   border-radius: 50%;
   background: #fff;
   box-shadow: 0 2px 8px #3578e511;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.social-icons a img:hover {
+.social-icons a img:hover,
+.social-icons a img:focus {
   transform: scale(1.15);
+  box-shadow: 0 4px 24px #3578e533;
 }
+
 .section {
   background: #fff;
   border-radius: 18px;
@@ -61,6 +86,7 @@ nav a:hover, nav a.active {
   max-width: 800px;
   margin: 0 auto 32px auto;
 }
+
 .section-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -69,11 +95,12 @@ nav a:hover, nav a.active {
   font-size: 2rem;
   letter-spacing: 2px;
 }
+
 @media (max-width: 600px) {
   .section {
     padding: 1rem;
   }
-  nav {
+  .nav-list {
     gap: 0.5rem;
   }
 }
