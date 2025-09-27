@@ -1,0 +1,32 @@
+<div class="sidebar">
+  <img src="/profile.jpg" class="profile-img" alt="Profile Picture">
+  <h2>Ashikuzzaman</h2>
+  <nav>
+    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Ashikuzzaman</a>
+    <a href="/cv" {% if page.url == "/cv" %}class="active"{% endif %}>CV</a>
+    <a href="/research" {% if page.url == "/research" %}class="active"{% endif %}>Research</a>
+    <a href="/projects" {% if page.url == "/projects" %}class="active"{% endif %}>Projects</a>
+    <a href="/experience" {% if page.url == "/experience" %}class="active"{% endif %}>Experience</a>
+    <a href="/extra-activities" {% if page.url == "/extra-activities" %}class="active"{% endif %}>Extra Activities</a>
+    <a href="/contact" {% if page.url == "/contact" %}class="active"{% endif %}>Contact</a>
+  </nav>
+  <button class="dark-toggle" onclick="toggleDarkMode()">
+    <span id="dark-icon">🌙</span> Dark Mode
+  </button>
+</div>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+    let isDark = document.body.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    document.getElementById('dark-icon').textContent = isDark ? '☀️' : '🌙';
+}
+(function() {
+    document.body.classList.add('sidebar-mode');
+    let theme = localStorage.getItem('theme');
+    if(theme === 'dark') {
+        document.body.classList.add('dark');
+        document.getElementById('dark-icon').textContent = '☀️';
+    }
+})();
+</script>
