@@ -15,11 +15,11 @@ title: "Ashikuzzaman"
 
 <nav aria-label="Main Navigation" >
   
-    <li><a href="#cv" class="active">CV</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <a href="#cv" class="active">CV</a>
+  <a href="#research">Research</a></li>
+   <a href="#experience">Experience</a>
+   <a href="#projects">Projects</a>
+   <a href="#contact">Contact</a>
 
 </nav>
 
