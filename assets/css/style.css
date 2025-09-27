@@ -96,6 +96,16 @@ nav {
   letter-spacing: 2px;
 }
 
+/* Align profile image and name in center */
+.profile {
+  text-align: center;
+}
+
+.nav-list {
+  justify-content: center;
+}
+
+/* Media query adjustments */
 @media (max-width: 600px) {
   .section {
     padding: 1rem;
