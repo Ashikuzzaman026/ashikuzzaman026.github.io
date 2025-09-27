@@ -3,14 +3,7 @@ layout: default
 title: "Contact"
 ---
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="cv.html">CV</a>
-  <a href="research.html">Research</a>
-  <a href="experience.html">Experience</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html" class="active">Contact</a>
-</nav>
+
 
 <div class="section">
   <div class="section-title">Contact</div>
