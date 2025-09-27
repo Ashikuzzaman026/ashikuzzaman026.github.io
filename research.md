@@ -3,14 +3,6 @@ layout: default
 title: "Research"
 ---
 
-<nav>
-  <a href="index.html">Home</a>
- <a href="cv.html">CV</a>
-  <a href="research.html" class="active">Research</a>
-  <a href="experience.html">Experience</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html">Contact</a>
-</nav>
 
 <div class="section">
   <div class="section-title">Research</div>
