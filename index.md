@@ -23,7 +23,7 @@ title: "Ashikuzzaman"
 </nav>
 
 <div class="section">
-  <div class="section-title">About Me</div>
+  
   <p>
     I am a <b>[Your Current Position, e.g., undergraduate student]</b> at <b>[Your University]</b>.
     <br>
