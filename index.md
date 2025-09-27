@@ -13,14 +13,14 @@ title: "Ashikuzzaman"
   </div>
 </div>
 
-<nav>
-  
- <a href="cv.html">CV</a>
-<a href="research.html">Research</a>
- <a href="experience.html">Experience</a>
-<a href="projects.html">Projects</a> 
- <a href="contact.html">Contact</a> 
-
+<nav aria-label="Main Navigation">
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 2rem; margin: 24px 0 32px 0; padding: 0; flex-wrap: wrap;">
+    <li><a href="#cv" class="active">CV</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <div class="section">
