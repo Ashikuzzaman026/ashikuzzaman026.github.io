@@ -5,8 +5,7 @@ title: "Research"
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="about.html">About Me</a>
-  <a href="cv.html">CV</a>
+ <a href="cv.html">CV</a>
   <a href="research.html" class="active">Research</a>
   <a href="experience.html">Experience</a>
   <a href="projects.html">Projects</a>
