@@ -1,6 +1,10 @@
+<!-- Hamburger Button -->
 <button class="hamburger" aria-label="Open navigation" onclick="toggleSidebar()">
   <span></span>
 </button>
+<!-- Overlay for closing sidebar on mobile -->
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+<!-- Sidebar -->
 <div class="sidebar" id="sidebar">
   <img src="/profile.jpg" class="profile-img" alt="Profile Picture">
   <h2>Ashikuzzaman</h2>
@@ -16,18 +20,24 @@
 </div>
 <script>
 function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
+  var sidebar = document.getElementById('sidebar');
+  var overlay = document.getElementById('sidebar-overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('active');
   document.body.classList.toggle('sidebar-open');
 }
-document.addEventListener('click', function(e) {
-  // Close sidebar if clicking outside on mobile
-  if (
-    window.innerWidth < 800 &&
-    document.getElementById('sidebar').classList.contains('open') &&
-    !document.getElementById('sidebar').contains(e.target) &&
-    !e.target.classList.contains('hamburger')
-  ) {
-    toggleSidebar();
-  }
+
+// Optionally, close sidebar on navigation click (for better mobile UX)
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('.sidebar nav a');
+  links.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if(window.innerWidth < 800){
+        document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('sidebar-overlay').classList.remove('active');
+        document.body.classList.remove('sidebar-open');
+      }
+    });
+  });
 });
 </script>
