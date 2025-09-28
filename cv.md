@@ -100,7 +100,7 @@ title: "CV"
     <div class="section">
         <h2>Training</h2>
         <ul>
-            <li><strong>Mobile App Development Course</strong><br>March 2024 – June 2024<br>Enhancing Digital Government and Economy (EDGE) Project, ICT Division Bangladesh<br>EDGE Project Website</li>
+            <li><strong>Mobile App Development Course</strong><br>March 2024 – June 2024<br>Enhancing Digital Government and Economy (EDGE) Project, ICT Division Bangladesh</li>
         </ul>
     </div>
 
