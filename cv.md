@@ -10,7 +10,7 @@ title: "CV"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashikuzzaman - CV</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: white; }
         .header { text-align: center; }
         .contact { font-style: italic; }
         .section { margin-bottom: 20px; }
@@ -23,6 +23,10 @@ title: "CV"
     </style>
 </head>
 <body>
+    <div class="download-btn">
+        <a href="data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL1Byb2R1Y2VyIChTYW1wbGUgUERGIEV4YW1wbGUpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNTA5MjgwNzEzMDBaKQovQ3JlYXRvciAoV29yZCkKL1RpdGxlIChBc2hpa3V6emFtYW4gQ1YpCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjAwIDgwMF0KL0NvbnRlbnRzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9MZW5ndGggMTA4Cj4+CnN0cmVhbQpCVAowIDAgVGQKL0YxIDEwIFRmCihBc2hpa3V6emFtYW4gQ1YpIFRqClRUNwo5MCA5MCBUZAooSmhhbGFrYXRoaSwgQmFuZ2xhZGVzaCAtICgrODgwKSAxNzQ4NjQ2NDcxIC0gYXNoaWt1enphbWFuLmNzZTcuYnVAZ21haWwuY29tKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCjcgMCBvYmoKPDwKL0xlbmd0aCAxODgKPj4Kc3RyZWFtCkJUCjAgMCBUZAovRjEgMTAgVGYKKEVu0h1c2lhc3RpYyBDb21wdXRlciBTY2llbmNlIGFuZCBNZ2luZWVyaW5nIHN0dWRlbnQgc3BlY2lhbGl6aW5nIGluIGN5YmVyc2VjdXJpdHksIHdpdGggaGFuZHMtb24gZXhwZXJpZW5jZSBpbiBtYWNoaW5lIGxlYXJuaW5nLCBkYXRhIHNjaWVuY2UsIGFuZCB3ZWIgZGV2ZWxvcG1lbnQuIFByb3ZlbiByZXNlYXJjaCBhbmQgaW5kdXN0cnkgZXhwZXJpZW5jZSwgd2l0aCBhIHN0cm9uZyBjb21taXRtZW50IHRvIGRlbGl2ZXJpbmcgaW5ub3ZhdGl2ZSBzb2x1dGlvbnMgYW5kIGNvbnRpbnVvdXMgc2tpbGwgZGV2ZWxvcG1lbnQuKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9Db3VudCAyCi9LaWRzIFs1IDAgUiA3IDAgUl0KPj4KZW5kb2JqCnRyYWlsZXIKPDwKL1Jvb3QgMSAwIFIKL0luZm8gNCAwIFIKL1NpemUgOAo+PgpzdGFydHhyZWYKMAolJUVPRgo=" download="Ashikuzzaman_CV.pdf">Download CV</a>
+    </div>
+
     <div class="header">
         <h1>Ashikuzzaman</h1>
         <p class="contact">Jhalakathi, Bangladesh - (+880) 1748646471 - ashikuzzaman.cse7.bu@gmail.com</p>
@@ -113,11 +117,5 @@ title: "CV"
             <li><strong>Dr. Md. Manjur Ahmed</strong>, Associate Professor, Department of CSE, University of Barishal<br>Email: mmahmed@bu.ac.bd</li>
         </ul>
     </div>
-
-    <div class="download-btn">
-        <a href="data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iagogPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9Qcm9kdWNlciAoU2FtcGxlIFBERiBFeGFtcGxlKQovQ3JlYXRpb25EYXRlIChEOjIwMjUwOTI4MDcwODA2MDApCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjAwIDgwMF0KL0NvbnRlbnRzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9MZW5ndGggMTEKPj4Kc3RyZWFtCkJUCjAgMCBUZAovRjEgMTAgVGYKKEhlbGxvIFdvcmxkKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCjcgMCBvYmoKPDwKL0xlbmd0aCAxMQo+PgpzdHJlYW0KQlQKMCkwIFRkCi9GMSAxMCBUZgooSGVsbG8gV29ybGQpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvUGFnZXMvQ291bnQgMgovS2lkcyBbNSAwIFIgNyAwIFJdCj4+CmVuZG9iagp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9JbmZvIDQgMCBSCi9TaXplIDgKPj4Kc3RhcnR4cmVmCjAKJSVFT0YK" download="Ashikuzzaman_CV.pdf">Download CV</a>
-    </div>
 </body>
 </html>
- 
-
