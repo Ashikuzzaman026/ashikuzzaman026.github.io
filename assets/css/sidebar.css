@@ -87,18 +87,41 @@ body {
   left: 0;
 }
 
-/* Optional: Overlay when sidebar is open on mobile */
-.sidebar-overlay {
-  display: none;
-  position: fixed;
-  z-index: 1100;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(20,25,30,0.5);
+/* Dark mode styles */
+body.dark-mode {
+  --bg: #181c24;
+  --secondary: #232a35;
+  color: #eaeaea;
+}
+body.dark-mode .sidebar {
+  background: #232a35;
+  color: #eaeaea;
+}
+body.dark-mode .section-card {
+  background: #232a35;
+  color: #eaeaea;
+}
+body.dark-mode .sidebar nav a {
+  color: #32d3c8;
+}
+body.dark-mode .sidebar nav a.active,
+body.dark-mode .sidebar nav a:hover {
+  background: #32d3c8;
+  color: #232a35;
 }
 
+/* Toggle button */
+.darkmode-toggle {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: none;
+  color: #32d3c8;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1202;
+}
 @media (max-width: 800px) {
   body {
     flex-direction: column;
@@ -124,6 +147,27 @@ body {
   .hamburger {
     display: block;
   }
+  .sidebar-overlay.active {
+    display: block;
+  }
+  .darkmode-toggle {
+    right: 60px; /* so it doesn't overlap hamburger */
+    top: 16px;
+  }
+}
+
+/* Optional: Overlay when sidebar is open on mobile */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20,25,30,0.5);
+}
+@media (max-width: 800px) {
   .sidebar-overlay.active {
     display: block;
   }
