@@ -4,7 +4,6 @@ title: "CV"
 ---
 
 
- 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +17,9 @@ title: "CV"
         .section h2 { border-bottom: 2px solid #000; }
         .section ul { list-style-type: disc; padding-left: 20px; }
         .section li { margin-bottom: 10px; }
+        .download-btn { text-align: center; margin: 20px 0; }
+        .download-btn a { padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; }
+        .download-btn a:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
@@ -100,7 +102,7 @@ title: "CV"
     <div class="section">
         <h2>Training</h2>
         <ul>
-            <li><strong>Mobile App Development Course</strong><br>March 2024 – June 2024<br>Enhancing Digital Government and Economy (EDGE) Project, ICT Division Bangladesh</li>
+            <li><strong>Mobile App Development Course</strong><br>March 2024 – June 2024<br>Enhancing Digital Government and Economy (EDGE) Project, ICT Division Bangladesh<br>EDGE Project Website</li>
         </ul>
     </div>
 
@@ -111,5 +113,11 @@ title: "CV"
             <li><strong>Dr. Md. Manjur Ahmed</strong>, Associate Professor, Department of CSE, University of Barishal<br>Email: mmahmed@bu.ac.bd</li>
         </ul>
     </div>
+
+    <div class="download-btn">
+        <a href="data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iagogPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9Qcm9kdWNlciAoU2FtcGxlIFBERiBFeGFtcGxlKQovQ3JlYXRpb25EYXRlIChEOjIwMjUwOTI4MDcwODA2MDApCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKL01lZGlhQm94IFswIDAgNjAwIDgwMF0KL0NvbnRlbnRzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9MZW5ndGggMTEKPj4Kc3RyZWFtCkJUCjAgMCBUZAovRjEgMTAgVGYKKEhlbGxvIFdvcmxkKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCjcgMCBvYmoKPDwKL0xlbmd0aCAxMQo+PgpzdHJlYW0KQlQKMCkwIFRkCi9GMSAxMCBUZgooSGVsbG8gV29ybGQpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvUGFnZXMvQ291bnQgMgovS2lkcyBbNSAwIFIgNyAwIFJdCj4+CmVuZG9iagp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9JbmZvIDQgMCBSCi9TaXplIDgKPj4Kc3RhcnR4cmVmCjAKJSVFT0YK" download="Ashikuzzaman_CV.pdf">Download CV</a>
+    </div>
 </body>
 </html>
+ 
+
