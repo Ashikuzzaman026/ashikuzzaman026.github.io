@@ -1,50 +1,63 @@
 .main-content {
   max-width: 950px;
   margin: auto;
-}
-.section-card {
-  background: var(--secondary, #fff);
-  border-radius: 14px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.07);
-  padding: 2rem 1.7rem;
-  margin-bottom: 2.3rem;
-  transition: box-shadow 0.2s, background 0.2s;
-}
-.section-card:hover {
-  box-shadow: 0 8px 40px rgba(76,205,196,0.15);
-  background: #f1fcfc;
-}
-h1, h2, h3 { color: #4ecdc4; font-weight: bold; }
-a {
-  color: #4ecdc4;
-  text-decoration: underline dotted;
-  transition: color 0.2s;
-}
-a:hover { color: #ffb300; }
-.project-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
+  flex-direction: column;
+  align-items: center;
 }
-.project-card {
-  background: #e8f7f6;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(76,205,196,0.09);
-  padding: 1.3em 1em;
-  width: 280px;
-  transition: box-shadow 0.2s, transform 0.2s;
+
+.section-card {
+  background: linear-gradient(135deg, #e0f7fa 0%, #f4f9fd 100%);
+  color: #253858;
+  margin: 2rem 0;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.14);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  border: 1.5px solid #b2ebf2;
+  overflow: hidden;
 }
-.project-card:hover {
-  box-shadow: 0 8px 32px rgba(255,184,0,0.14);
-  transform: scale(1.04) translateY(-4px);
+
+.section-card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #32d3c8 40%, #4fd1c5 100%);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
-.project-card img {
-  width: 100%;
-  border-radius: 7px;
-  margin-bottom: 0.7em;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+
+.section-card:hover {
+  transform: translateY(-3px) scale(1.015);
+  box-shadow: 0 16px 40px 0 rgba(44, 62, 80, 0.20);
 }
-body.dark .section-card { background: #23242a;}
-body.dark .section-card:hover { background: #23242a;}
-body.dark .project-card { background: #292b30;}
-body.dark .project-card:hover {background: #2d2f35;}
+
+.section-card h1 {
+  font-size: 2.2rem;
+  color: #14c3b8;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.section-card p {
+  font-size: 1.18rem;
+  color: #253858;
+  margin-bottom: 1.3rem;
+}
+
+.section-card ul {
+  list-style: disc inside;
+  padding: 0;
+}
+.section-card li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
