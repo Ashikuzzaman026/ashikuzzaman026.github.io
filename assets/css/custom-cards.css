@@ -1,57 +1,78 @@
-body {
-  /* Animated gradient background */
-  background: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%);
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease-in-out infinite;
+html, body {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%;}
-  50% { background-position: 100% 50%;}
-  100% { background-position: 0% 50%;}
+body {
+  /* Vibrant animated gradient background */
+  background: linear-gradient(120deg, #43e97b 0%, #38f9d7 50%, #fa8bff 100%);
+  background-size: 300% 300%;
+  animation: bgMove 12s ease-in-out infinite;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 60%; }
+  50% { background-position: 100% 40%; }
+  100% { background-position: 0% 60%; }
 }
 
 .main-content {
   max-width: 950px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
 }
 
 .section-card {
-  /* Glassmorphism effect */
-  background: rgba(255, 255, 255, 0.30);
-  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.22);
-  backdrop-filter: blur(10px) saturate(180%);
-  -webkit-backdrop-filter: blur(10px) saturate(180%);
-  border-radius: 24px;
-  border: 2.5px solid rgba(50, 211, 200, 0.22);
+  background: #fff;
+  color: #253858;
   margin: 3rem 0;
   padding: 3rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 30px;
+  box-shadow:
+    0 0 0 12px rgba(50, 211, 200, 0.08),
+    0 8px 32px 0 rgba(44, 62, 80, 0.18),
+    0 0 80px 0 rgba(250, 139, 255, 0.12);
   position: relative;
   transition: transform 0.22s, box-shadow 0.22s;
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 3;
 }
 
 .section-card::before {
-  /* Decorative accent at top */
+  /* Decorative glowing bar */
   content: '';
   display: block;
   position: absolute;
-  width: 80px;
-  height: 5px;
-  background: linear-gradient(90deg, #32d3c8 0%, #14c3b8 100%);
-  top: 0;
+  width: 90px;
+  height: 7px;
+  background: linear-gradient(90deg, #32d3c8 0%, #fa8bff 100%);
+  top: -18px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 2.5px;
+  border-radius: 10px;
+  filter: blur(0.5px) brightness(1.5);
+  box-shadow: 0 0 16px 4px #fa8bff66;
 }
 
 .section-card:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 16px 48px 0 rgba(44, 62, 80, 0.30);
+  transform: translateY(-7px) scale(1.021);
+  box-shadow:
+    0 0 0 12px rgba(50, 211, 200, 0.13),
+    0 16px 48px 0 rgba(44, 62, 80, 0.27),
+    0 0 120px 0 rgba(250, 139, 255, 0.23);
 }
 
 .section-card h1 {
@@ -61,12 +82,12 @@ body {
   letter-spacing: 1px;
   margin-top: 1.7rem;
   margin-bottom: 1.1rem;
-  text-shadow: 0 2px 6px rgba(50, 211, 200, 0.08);
+  text-shadow: 0 2px 6px #32d3c820;
 }
 
 .section-card p {
   font-size: 1.22rem;
-  color: #193144;
+  color: #253858;
   margin-bottom: 1.4rem;
   font-weight: 500;
 }
