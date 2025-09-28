@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  /* Vibrant animated gradient background */
+  /* Ultra-vibrant animated gradient background, no white visible! */
   background: linear-gradient(120deg, #43e97b 0%, #38f9d7 50%, #fa8bff 100%);
   background-size: 300% 300%;
   animation: bgMove 12s ease-in-out infinite;
@@ -39,16 +39,17 @@ body {
   color: #253858;
   margin: 3rem 0;
   padding: 3rem 2.5rem 2.5rem 2.5rem;
-  border-radius: 30px;
+  border-radius: 38px;
   box-shadow:
     0 0 0 12px rgba(50, 211, 200, 0.08),
-    0 8px 32px 0 rgba(44, 62, 80, 0.18),
-    0 0 80px 0 rgba(250, 139, 255, 0.12);
+    0 12px 32px 0 rgba(44, 62, 80, 0.20),
+    0 0 120px 0 rgba(250, 139, 255, 0.18);
   position: relative;
   transition: transform 0.22s, box-shadow 0.22s;
   text-align: center;
   overflow: visible;
   z-index: 3;
+  border: 0;
 }
 
 .section-card::before {
@@ -70,9 +71,9 @@ body {
 .section-card:hover {
   transform: translateY(-7px) scale(1.021);
   box-shadow:
-    0 0 0 12px rgba(50, 211, 200, 0.13),
+    0 0 0 16px rgba(50, 211, 200, 0.13),
     0 16px 48px 0 rgba(44, 62, 80, 0.27),
-    0 0 120px 0 rgba(250, 139, 255, 0.23);
+    0 0 160px 0 rgba(250, 139, 255, 0.25);
 }
 
 .section-card h1 {
