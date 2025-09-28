@@ -2,6 +2,7 @@
 <button class="hamburger" aria-label="Open navigation" onclick="toggleSidebar()">
   <span></span>
 </button>
+<!-- Dark Mode Toggle Button -->
 <button class="darkmode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
   🌓
 </button>
@@ -10,7 +11,7 @@
 <!-- Sidebar -->
 <div class="sidebar" id="sidebar">
   <img src="/profile.jpg" class="profile-img" alt="Profile Picture">
- 
+  <!-- <h2>Ashikuzzaman</h2> --> <!-- REMOVED AS REQUESTED -->
   <nav>
     <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Ashikuzzaman</a>
     <a href="/cv" {% if page.url == "/cv" %}class="active"{% endif %}>CV</a>
@@ -21,29 +22,6 @@
     <a href="/contact" {% if page.url == "/contact" %}class="active"{% endif %}>Contact</a>
   </nav>
 </div>
-<script>
-function toggleSidebar() {
-  var sidebar = document.getElementById('sidebar');
-  var overlay = document.getElementById('sidebar-overlay');
-  sidebar.classList.toggle('open');
-  overlay.classList.toggle('active');
-  document.body.classList.toggle('sidebar-open');
-}
-
-// Optionally, close sidebar on navigation click (for better mobile UX)
-document.addEventListener('DOMContentLoaded', function() {
-  var links = document.querySelectorAll('.sidebar nav a');
-  links.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if(window.innerWidth < 800){
-        document.getElementById('sidebar').classList.remove('open');
-        document.getElementById('sidebar-overlay').classList.remove('active');
-        document.body.classList.remove('sidebar-open');
-      }
-    });
-  });
-});
-</script>
 <script>
 function toggleSidebar() {
   var sidebar = document.getElementById('sidebar');
