@@ -3,7 +3,6 @@ layout: default
 title: "CV"
 ---
 
-
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
