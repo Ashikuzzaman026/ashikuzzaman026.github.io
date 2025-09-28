@@ -6,14 +6,15 @@ html, body {
   box-sizing: border-box;
 }
 
+/* Light Mode (default) */
 body {
-  /* Ultra-vibrant animated gradient background, no white visible! */
   background: linear-gradient(120deg, #43e97b 0%, #38f9d7 50%, #fa8bff 100%);
   background-size: 300% 300%;
   animation: bgMove 12s ease-in-out infinite;
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  color: #253858;
 }
 
 @keyframes bgMove {
@@ -53,7 +54,6 @@ body {
 }
 
 .section-card::before {
-  /* Decorative glowing bar */
   content: '';
   display: block;
   position: absolute;
@@ -66,14 +66,6 @@ body {
   border-radius: 10px;
   filter: blur(0.5px) brightness(1.5);
   box-shadow: 0 0 16px 4px #fa8bff66;
-}
-
-.section-card:hover {
-  transform: translateY(-7px) scale(1.021);
-  box-shadow:
-    0 0 0 16px rgba(50, 211, 200, 0.13),
-    0 16px 48px 0 rgba(44, 62, 80, 0.27),
-    0 0 160px 0 rgba(250, 139, 255, 0.25);
 }
 
 .section-card h1 {
@@ -103,4 +95,70 @@ body {
   color: #134e4a;
   font-weight: 600;
   word-break: break-word;
+}
+
+a, a:visited {
+  color: #14c3b8;
+  text-decoration: underline;
+}
+
+.sidebar nav a {
+  color: #32d3c8;
+}
+
+/* ====================== */
+/* DARK MODE OVERRIDES    */
+/* ====================== */
+body.dark-mode {
+  background: linear-gradient(120deg, #22223b 0%, #272859 50%, #332f4e 100%);
+  color: #eaf6fb;
+}
+
+body.dark-mode .main-content {
+  color: #eaf6fb;
+}
+
+body.dark-mode .section-card {
+  background: #181926;
+  color: #eaf6fb;
+  box-shadow:
+    0 0 0 12px rgba(50, 211, 200, 0.05),
+    0 12px 32px 0 rgba(30, 40, 60, 0.40),
+    0 0 120px 0 #22223b55;
+}
+
+body.dark-mode .section-card::before {
+  background: linear-gradient(90deg, #32d3c8 0%, #fa8bff 100%);
+  filter: brightness(2);
+  box-shadow: 0 0 16px 12px #32d3c822;
+}
+
+body.dark-mode .section-card h1 {
+  color: #32d3c8;
+  text-shadow: 0 2px 8px #32d3c855;
+}
+
+body.dark-mode .section-card p,
+body.dark-mode .section-card li {
+  color: #eaf6fb;
+}
+
+body.dark-mode a,
+body.dark-mode a:visited {
+  color: #75eaff;
+  text-shadow: 0 1px 5px #222, 0 0 1px #fff6;
+}
+body.dark-mode a:hover {
+  color: #fa8bff;
+}
+
+body.dark-mode .sidebar nav a {
+  color: #32d3c8;
+}
+
+body.dark-mode .sidebar nav a.active,
+body.dark-mode .sidebar nav a:hover {
+  background: #32d3c8;
+  color: #232a35;
+  transition: 0.2s;
 }
