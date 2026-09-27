@@ -1,13 +1,10 @@
-title: "Ashikuzzaman - Academic Portfolio"
-#author: Ashikuzzaman
-email: your-email@example.com
+title: "Ashikuzzaman | Academic Portfolio"
+email: a20.cse@bu.ac.bd
 description: >-
-  Aspiring researcher and developer passionate about technology, innovation, and making an impact.
+  Academic portfolio of Ashikuzzaman, featuring research in cybersecurity,
+  explainable AI, and machine learning applications.
 baseurl: ""
 url: "https://ashikuzzaman026.github.io"
 theme: minima
 minima:
   skin: auto
-  include_css:
-    - /assets/css/sidebar.css
-    - /assets/css/custom-cards.css
