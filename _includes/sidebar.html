@@ -1,59 +1,53 @@
-<!-- Hamburger Button -->
-<button class="hamburger" aria-label="Open navigation" onclick="toggleSidebar()">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<button class="hamburger" aria-label="Toggle navigation" aria-controls="sidebar" aria-expanded="false" onclick="toggleSidebar()">
   <span></span>
 </button>
-<!-- Dark Mode Toggle Button -->
 <button class="darkmode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
   🌓
 </button>
-<!-- Overlay for closing sidebar on mobile -->
 <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
-<!-- Sidebar -->
-<div class="sidebar" id="sidebar">
-  <img src="/profile.jpg" class="profile-img" alt="Profile Picture">
-  <!-- <h2>Ashikuzzaman</h2> --> <!-- REMOVED AS REQUESTED -->
+<aside class="sidebar" id="sidebar" aria-label="Section navigation">
+  <img src="/profile.jpg" class="profile-img" alt="Portrait of Ashikuzzaman">
   <nav>
-    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Ashikuzzaman</a>
-    <a href="/cv" {% if page.url == "/cv" %}class="active"{% endif %}>CV</a>
-    <a href="/research" {% if page.url == "/research" %}class="active"{% endif %}>Research</a>
-    <a href="/projects" {% if page.url == "/projects" %}class="active"{% endif %}>Projects</a>
-    <a href="/experience" {% if page.url == "/experience" %}class="active"{% endif %}>Experience</a>
-    <a href="/extra-activities" {% if page.url == "/extra-activities" %}class="active"{% endif %}>Extra Activities</a>
-    <a href="/contact" {% if page.url == "/contact" %}class="active"{% endif %}>Contact</a>
+    <a href="/#about">About</a>
+    <a href="/#research">Research</a>
+    <a href="/#publications">Publications</a>
+    <a href="/#experience">Experience</a>
+    <a href="/#skills">Skills</a>
+    <a href="/#education">Education</a>
+    <a href="/#service">Service</a>
+    <a href="/#contact">Contact</a>
   </nav>
-</div>
+</aside>
 <script>
 function toggleSidebar() {
-  var sidebar = document.getElementById('sidebar');
-  var overlay = document.getElementById('sidebar-overlay');
-  sidebar.classList.toggle('open');
-  overlay.classList.toggle('active');
-  document.body.classList.toggle('sidebar-open');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  const burger = document.querySelector('.hamburger');
+  const isOpen = sidebar.classList.toggle('open');
+  overlay.classList.toggle('active', isOpen);
+  document.body.classList.toggle('sidebar-open', isOpen);
+  burger.setAttribute('aria-expanded', String(isOpen));
 }
 
-// Dark mode logic
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
-  // Save preference to localStorage
-  if(document.body.classList.contains('dark-mode')){
-    localStorage.setItem('theme', 'dark');
-  } else {
-    localStorage.setItem('theme', 'light');
-  }
+  localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
 }
-// On page load, set the theme
+
 document.addEventListener('DOMContentLoaded', function() {
-  if(localStorage.getItem('theme') === 'dark'){
+  if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
   }
-  // Close sidebar on nav click (mobile UX)
-  var links = document.querySelectorAll('.sidebar nav a');
+
+  const links = document.querySelectorAll('.sidebar nav a');
   links.forEach(function(link) {
     link.addEventListener('click', function() {
-      if(window.innerWidth < 800){
+      if (window.innerWidth < 800) {
         document.getElementById('sidebar').classList.remove('open');
         document.getElementById('sidebar-overlay').classList.remove('active');
         document.body.classList.remove('sidebar-open');
+        document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
       }
     });
   });
